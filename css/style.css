@@ -1,0 +1,547 @@
+*{ 
+    margin: 0px;
+    padding: 0px;
+    scroll-behavior: smooth;
+   /* text-shadow: #000000 3px 3px 2px;*/
+  
+    }
+      
+  :root{ 
+    --corPrincipal:rgb(29, 13, 134);
+    --cor-cardUx: rgb(112, 177, 163);
+    --cor-cardIncentivo: rgb(118, 18, 131);
+    --cor-cardAcademico: blue;
+  }
+      
+  ::-webkit-scrollbar{
+  background-color: black;
+  
+  }
+  ::-webkit-scrollbar-thumb{
+    background-color: #314285;
+    border-radius: 10px 0 0 10px;
+  }
+  
+  a{
+    text-decoration: none;
+    color: rgb(255, 255, 255); 
+  }
+  .logo-header{
+        width: 90px;
+        height: 90px;
+  }
+      
+      
+  .principal{
+    display: flex;
+    position: fixed;
+    width: 100%;
+    justify-content:space-around;  
+    padding: 0px;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color:rgba(10, 10, 10, 0.6);
+    backdrop-filter: blur(4px);
+    z-index: 1;
+    /* max-height: 70px; */
+  
+  
+        
+  }
+        
+  
+  .menu{
+   display: flex;
+          
+  }
+   .principal ul li{
+   margin-left: 20px;
+   position: relative;
+   font-size: large;
+   font-family:sunny;
+  
+  }
+      
+  .principal ul{ 
+  list-style-type: none;
+  padding: 0px;
+  
+  }
+      
+  .principal ul li a:hover{
+  color: rgb(55, 128, 237);
+            
+  }
+  
+         
+  
+  
+  /*corpo ----------------------------------------------------------------*/
+      
+  main{
+  height: 100vh;
+  /*background-color:var(--corPrincipal) ;*/
+  /*background: url("https://i.pinimg.com/originals/9c/98/22/9c9822a872aadcc57e2dfb3be7866780.gif")
+  background-color: #272727;
+  background-image: radial-gradient(#616ee9 2px, #272727 2px);
+  background-size: 40px 40px;*/
+  /*background-image: linear-gradient(to right top, #353535, #3b3559, #3f347d, #462ea1, #5120c3);*/
+  display: flex;
+  
+  background: linear-gradient(63.13deg, #3f4f92 41.04%,  #353535 41.05% , #3b3559, #3f347d, #462ea1, #5120c3);
+  /*background: linear-gradient(63.13deg, #3f4f92 41.04%, #2a98a2 41.05% ,yellow );*/
+  
+            }   
+  
+         
+            
+  .inicio{ 
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  /*background-color: linen;*/
+  justify-content: space-around;
+  flex-wrap: wrap;
+  
+  }
+  
+  .logo-inicio{ 
+  width: 20% ;
+  min-width: 200px;
+  background-image: url(../imagens/logo-skull.png);
+  background-position:center;
+  background-size: 300px 320px;
+  background-repeat: no-repeat;
+  
+  
+  }
+  
+  
+  .paragrafo-inicio{
+    font-size: 60px;
+    color: whitesmoke;
+    font-family:blank;
+  
+  }
+  
+  .Front-End{ 
+    font-size: 31px;
+    font-family:'Press Start 2P', sunny;
+    border-right: 2px solid whitesmoke;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: cursor 800ms normal steps(9) infinite, 
+    escrita 3s steps(9) 1s normal both;
+    color: whitesmoke;
+    width: 250px;
+  }
+  
+  @keyframes escrita {
+      from{ width: 0;}
+      to{ width: 278px;}}
+     
+  @keyframes cursor{
+    from{ border-right-color: whitesmoke; }
+    to { border-right-color: transparent;}
+  }
+  
+  
+  /*Sobre mim ----------------------------------------------------------------------------*/
+  
+  
+  
+  
+  #sobre-mim{
+    width: 100%;
+    padding: 150px 0;
+    background-color:#314285 ; /*#3f347d*/
+    text-align: center;
+    border-top: solid black 3px ;
+    border-bottom: solid black 3px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .Titu-SM{
+    font-size: 4.5rem;
+    font-family: 'blank', sans-serif;
+    color: white;
+  }
+  
+  
+  
+  .sec-sm{
+    background-color: rgb(50, 50, 50);
+    width: 95%;
+  
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    flex-wrap: wrap;
+    margin: auto;
+    border-radius: 30px ;
+    border: solid black 2px;
+    box-shadow: 2.8px 2.8px 2.2px rgba(0, 0, 0.02),
+    6.7px 6.7px 5.3px rgb(57, 8, 157),
+    12.5px 12.5px 10px rgba(0, 0, 0.035),
+    22.3px 22.3px 17.9px rgba(0, 0, 0.042),
+    41.8px 41.8px 33.4px rgba(0, 0, 0.05),
+    100px 100px 80px rgba(0, 0, 0.07);
+  }
+  
+  
+  
+  .eu-Computador{ 
+  width:300px;
+  height: 300px;
+  
+  
+  }
+  
+  .bloco-sm{ 
+    border: inset rgb(85, 85, 85) 10px;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.689) inset ; 
+    border-radius: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    height: 80%;
+    width: 50%;
+    justify-content: space-around;
+    background-color: rgba(109, 109, 109, 0.502);
+    
+  }
+  
+  .texto-sobremim1,.texto-sobremim2{
+    width: 40%;
+    margin: 20px 0;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    border: #462ea1 solid 4px;
+    border-radius: 30px;
+    box-shadow: 5px 5px rgb(34, 45, 100) ;
+  
+  }
+  
+  
+  .txt-sm{ 
+    font-size: 1rem;
+    font-family: monospace;
+    text-align:center;
+    padding: 15px;
+  }
+  
+  .botao-curriculo{ 
+    background-color: rgb(0, 70, 150);
+    border: solid #293259;
+    border-radius: 30px;
+    width: 150px;
+    height: 40px;
+    font-size: larger;
+    color: white;
+    margin-top: 10px;
+    box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.658) ;
+    transition-duration:0.5s;
+    font-family: sunny;
+  }
+  
+  .botao-curriculo:hover{
+    transform: scale(1.1);
+    filter:contrast(75%);
+  }
+   /*projetos ----------------------------------------------------*/
+  
+   #projetos{
+   width: 100%;
+   padding: 150px 0;
+   background-color:#1e1e1e ; /*#3f347d*/
+   display: flex;
+   justify-content: center;
+   align-items: center;
+  
+  
+  }
+   
+  .sec-projetos{
+    background-color: rgb(52, 52, 52);
+    width: 96%;
+    height: 75%;
+    border-radius: 30px;
+    text-align: center;
+    align-items: center ;
+    padding: 20px;
+    box-shadow: 30px 30px 30px 30px rgba(0, 28, 119, 0.42);
+    border: solid 3.5px black;
+   }
+  
+  
+  #h1-projetos{
+    font-family: 'blank', sans-serif;
+    font-size: 5rem;
+    color: white;
+  }
+  
+  .bloco-projeto{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: center;
+    text-align: center;
+    margin: 0 auto;
+   /* position: absolute;
+    top: 227vh; bottom: 0;
+    left: 10%; right: 0;*/
+    
+  }
+  
+  .cards{
+    background-color: rgb(214, 214, 214);
+    width: 285px;
+    height: 380px;
+    border-radius: 30px;
+    padding: 15px;
+    border: solid 3.5px var(--cor-cardUx) ;
+    box-shadow: 7px 7px 7px  rgba(0, 0, 0, 0.6);
+    list-style: none;
+    position: relative;
+  }
+  
+  h2{ 
+    font-size: x-large;
+    font-family: sunny;
+    margin: 5px;
+  }
+  
+  .img-cards{
+    width: 220px;
+    height: 120px;
+    border: solid var(--cor-cardUx) 3.5px;
+    margin: 5px;
+    border-radius: 30px;
+  }
+  
+  .escrita-cards{
+    font-size: 1rem;
+    text-align: start;
+    margin: 5px;
+    font-family: monospace;
+  }
+  
+  .bt-cards{
+    width: 150px;
+    height: 50px;
+    border-radius: 30px; 
+    cursor: pointer;
+    background: var(--cor-cardUx);
+    color: white;
+    font-family: sunny;
+    font-size: larger;
+    font-weight: bolder;
+    box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.658) ;
+    transition-duration:0.5s;
+  }
+  .cards button{
+    position: absolute;
+    bottom: 20px;
+    left: 25%;
+  }
+  
+  .bt-cards:hover{
+    transform: scale(1.1);
+    filter:contrast(60%);
+  }
+  
+  .card-incentivo{border: 3.5px solid var(--cor-cardIncentivo);}
+  .card-incentivo img{border: 3.5px solid var(--cor-cardIncentivo);}
+  .card-incentivo button{background-color:var(--cor-cardIncentivo); }
+  
+  
+  .card-academico{ border: 3.5px solid var(--cor-cardAcademico);}
+  .card-academico img{ border: 3.5px solid var(--cor-cardAcademico); }
+  .card-academico button{background-color:var(--cor-cardAcademico); }
+  
+  
+  
+  /* --------------------- habilidades ------------------------- */
+  
+  #Habilidades{
+    width: 100%;
+    padding: 100px 0;
+    background-color: #314285;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     border-top: solid black 3px ;
+    border-bottom: solid black 3px ;
+  }
+  
+  .sec-habilidades{
+    width: 95%;
+  
+    display: flex;
+    border-radius: 30px;
+    box-shadow: 8px 8px 0px rgb(22, 36, 41);
+  
+  }
+  
+  .logos-hab{
+    background-color: rgb(64, 64, 64);
+    text-align: center;
+    border-radius: 30px 0 0 30px;
+    border-right: solid gray 4px;
+    list-style: none;
+   border: outset 5px rgb(100, 100, 100);
+   width: 25%;
+  }
+  
+  .logos-hab li{ 
+    margin: 65px 0;
+    transition-duration:0.5s;
+    filter: drop-shadow(2px 2px 5px rgba(158, 158, 158, 0.454));
+  }
+  
+  .logos-hab li:hover{
+    transform: scale(1.1);
+    filter:contrast(80%) drop-shadow(2px 2px 5px rgba(158, 158, 158, 0.58));
+  }
+  .img-logos{
+    width: 25%;
+   cursor: pointer;
+  }
+  
+  .imgjs{ width: 30%;}
+  
+  
+  .titu-habilidades{
+    font-family: 'blank', sans-serif;
+    font-size: 5rem;
+    color: white;
+    border-bottom: gray solid 3px ;
+    
+  }
+  
+  .comentario{
+    width: 75%;
+    background-color: rgb(105, 105, 105);
+    border-radius: 0 30px 30px 0;
+    text-align: center;
+    padding: 25px;  
+    border: inset 5px rgb(85, 85, 85);
+    box-shadow: inset 10px 10px 10px  rgba(0, 0, 0, 0.689);
+    box-sizing: border-box;
+  
+  
+  }
+  
+  #titu-item{
+    margin: 25px 0;
+    color: white;
+    font-size: 2.5rem;
+    font-family: monospace;  
+  }
+  
+  #sobre-item{ 
+    color: white;
+    font-size: 1.5rem;
+    font-family: monospace;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+   
+  }
+  
+  @media only screen and (max-device-width:900px) {
+  
+    main{ background: linear-gradient(23.13deg, #3f4f92 55.05%,  #353535 55.05% , #3b3559, #3f347d, #462ea1, #5120c3);}
+      
+      #sobre-mim{
+        height: auto;
+        padding: 100px 0;
+      
+      }
+    
+      .sec-sm{
+        flex-direction: column;
+  
+      }
+    
+      .bloco-sm{
+        height: 750px; 
+        width: 90%;
+        flex-direction: column;
+      }
+      
+    .texto-sobremim1,.texto-sobremim2{
+      width: 70%;
+      margin: 0 auto; 
+      padding: 10px;
+     
+      }
+    
+    
+    .cards{
+      margin: 25px 0;
+    }
+    
+      .titu-habilidades{
+        font-size: 3.5rem;
+      }
+      
+      #titu-item{
+        font-size: 1.5rem;
+     
+      }
+      #sobre-item{
+        font-size: 1.2rem;
+        width: 90%;
+      }
+      .img-logos{
+        width: 70px;
+      }
+    /*.comentario{
+      width: 75%;
+      height: auto;
+    }
+  
+    .logos-hab{
+      width: 25%;
+  
+    }*/
+  
+  
+    
+    }
+  
+  
+  
+  footer{
+   background-color: rgb(30, 30, 30);
+  display: flex;
+  font-size: 20px;
+  padding: 15px 0;
+  justify-content: space-around;
+  color:white;
+  align-items: center;
+  font-family: monospace;
+  }
+  
+  .ul-foot{
+    margin-right: 15px;
+    display: flex;
+   
+    list-style:none;
+  }
+  
+  .ul-foot li{ 
+    margin-right: 15px;
+    filter: drop-shadow(2px 2px 5px rgba(158, 158, 158, 0.45));
+  }
+  
+  .logo-foot{
+    width: 50px;
+    height: 50px;
+  }
+  
+  

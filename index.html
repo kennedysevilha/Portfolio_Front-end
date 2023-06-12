@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfólio-Kennedy</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="imagens/logo-skull.png"/>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <style>
+        @font-face{
+          font-family:'blank';
+        src: url('font/Blank\ River.ttf') format('truetype') ;
+          font-weight: 900;
+          font-style: normal;
+        }
+
+        @font-face{
+          font-family:'sunny';
+        src: url('font/Sunny\ Sunday.ttf') format('truetype') ;
+          font-weight: 900;
+          font-style: normal;
+        }
+    </style>
+</head>
+<body no-script>
+    
+    <main>
+    <header class="principal">
+        <a href="#inicio"><img src="imagens/logo-skull.png" alt="Logo" class="logo-header"></a>
+
+       
+        <nav>
+            <ul class="menu">
+                <li> <a href="#inicio" class="ahd">Inicio</a></li>
+               
+                <li> <a href="#sobre-mim" class="ahd">Sobre mim</a></li>
+
+                <li> <a href="#projetos" class="ahd">Projetos</a></li>
+             
+                <li><a href="#Habilidades" class="ahd">Habilidades</a></li>
+              
+
+               
+            </ul>
+        </nav>
+    </header>
+
+
+    <div class="inicio" id="inicio">
+
+   <img src="imagens/5b87ebef-37b9-4551-8d16-08f2c18f11bd.webp" alt="logo" class="logo-inicio">
+
+   <div class="texto-inicio">
+        <h2 class="paragrafo-inicio">Bem vindo ao meu Portfólio </h2>
+            <h1 class="Front-End">Front End</h1>
+        <h2 class="paragrafo-inicio">Conheça mais sobre mim</h2>
+       
+    </div>
+    </div>
+</main>
+
+<!--------------------------- Sobre mim ----------------------------->
+
+<section id="sobre-mim">
+ 
+<article class="sec-sm" >
+
+    <div class="titu-img">
+    <h1 class="Titu-SM"> Sobre Mim</h1>
+    <img class="eu-Computador" src="imagens/de9dbe51-7c20-4050-b55b-83bc68ba4059.webp" alt="imagem-eu-computador">
+    </div>
+
+    <div class="bloco-sm">
+        <div class="texto-sobremim1">
+        <p class="txt-sm">Meu nome é Kennedy e sou desenvolvedor front-end, atualmente tenho 18 anos e estou no 1 semestre da Graduação em ciência da computação, sou formado em técnico de informática. Este é meu portfolio onde apresentarei minhas habilidades e experiência na criação de sites visualmente atraentes e funcionais. </p>    
+
+        </div>
+
+        <div class="texto-sobremim2">
+
+        <p class="txt-sm">Obrigado por reservar um tempo para ver meu portfólio. Se você tiver alguma dúvida ou necessite de mais informações visite meu Perfil do Linkedin, não hesite em entrar em contato para possíveis conversas e colaborações.</p>
+        <a  href="https://www.linkedin.com/in/kennedy-sevilha-a6111824b/"><button class="botao-curriculo">Linkedin</button></a>
+
+        </div>    
+    </div>
+
+</article>
+
+</section>
+
+
+<section id="projetos">
+
+<article  class="sec-projetos">
+    <h1 id="h1-projetos">Projetos</h1>
+    <ul class="bloco-projeto">
+         
+        <li class="cards card-ux">
+            <h2>UX|UI</h2>
+            <img class="img-cards" src="imagens/embreveatt.png" alt="">
+            <p class="escrita-cards">Atualmente a equipe de Front-End esta mais ampla doque apenas o desenvolvedor, contendo os UI e UX que desenvolvem o projeto da pagina web.</p>
+           <button class="bt-cards">Em breve</button>
+        </li>
+
+        <li class="cards card-incentivo">
+            <h2>Github</h2>
+            <img class="img-cards" src="imagens/githubwall.png" alt="">
+            <p class="escrita-cards">Explore meu GitHub e descubra mais projetos em outras linguagens e aréas.</p>
+            <a href="https://github.com/kennedysevilha"><button class="bt-cards">Ver Perfil</button></a>
+        </li>
+
+        <li class="cards card-academico">
+            <h2>Academicos</h2>
+            <img class="img-cards" src="imagens/academicos.png" alt="">
+            <p class="escrita-cards">Aqui você encontrara alguns projetos acadêmicos desenvolvido durante diversos cursos que realizo. </p>
+            <a href="Projetos.html"><button class="bt-cards">Ver Projetos</button></a>
+        </li>
+    </ul>
+</article>
+
+</section>
+
+
+<!-------------------- Habilidades -------------------->
+
+<section id="Habilidades">
+    <article  class="sec-habilidades">
+        <ul class="logos-hab">
+            <li><img onclick="html()" src="imagens/logo-html.png" class="img-logos" alt="Logo HTML5"></li>
+            <li><img onclick="css()" src="imagens/logo-css.png" class="img-logos" alt="Logo CSS3"></li>
+            <li><img onclick="js()" src="imagens/logo-js.png" class="img-logos imgjs" alt="Logo JavaScript"></li>
+            <li><img onclick="acessibilidade()" src="imagens/logo-acessibilidade.png" class="img-logos" alt="Acessibilidade Web"></li>
+        </ul>
+        <div class="comentario">
+            <h1 class="titu-habilidades">Habilidades</h1>
+            <h3 id="titu-item"></h3>
+            <p id="sobre-item"> Clique nos botões ao lado e vizualize de forma específica</p>
+        </div>
+    </article>
+</section>
+
+<footer>
+<h5>&#169; Kennedy Sevilha - 2023</h5>   
+<ul class="ul-foot">
+<li><a href="https://github.com/kennedysevilha"><img class="logo-foot"src="imagens/github_icon.png" alt="logo link github"></a></li>
+<li><a href="https://www.linkedin.com/in/kennedy-sevilha-a6111824b/"><img class="logo-foot" src="imagens/linkedin-icon.png" alt="logo link linkedin"></a></li>
+</ul>
+</footer>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
